@@ -1,0 +1,72 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {french}{}
+\babel@toc {french}{}
+\contentsline {chapter}{\numberline {1}Contexte du stage}{1}{chapter.8}%
+\contentsline {section}{\numberline {1.1}Présentation de Gigamesh }{1}{section.9}%
+\contentsline {section}{\numberline {1.2}L’organigramme de Gigamesh :}{1}{section.10}%
+\contentsline {section}{\numberline {1.3}Localisation de Gigamesh :}{3}{section.13}%
+\contentsline {section}{\numberline {1.4}Domaine d’activité de Gigamesh}{3}{section.14}%
+\contentsline {subsection}{\numberline {1.4.1}Assurance emprunteur}{3}{subsection.15}%
+\contentsline {subsection}{\numberline {1.4.2}Assurly}{4}{subsection.17}%
+\contentsline {section}{\numberline {1.5}Objectif du stage}{6}{section.23}%
+\contentsline {chapter}{\numberline {2}Etat de l’art}{7}{chapter.25}%
+\contentsline {section}{\numberline {2.1}Le cloud computing}{7}{section.26}%
+\contentsline {subsection}{\numberline {2.1.1}Les services du cloud computing}{8}{subsection.28}%
+\contentsline {subsubsection}{IaaS (Infrastructure as a Service, en anglais) }{8}{section*.29}%
+\contentsline {subsubsection}{PaaS (Platform as a Service, en anglais)}{8}{section*.30}%
+\contentsline {subsubsection}{SaaS (Software as a Service, en anglais)}{8}{section*.31}%
+\contentsline {section}{\numberline {2.2}Les APIs(Application programming interface)}{9}{section.32}%
+\contentsline {subsection}{\numberline {2.2.1}Objectif d’une API}{9}{subsection.34}%
+\contentsline {subsection}{\numberline {2.2.2}Analogie d’une API avec la vie courante}{9}{subsection.35}%
+\contentsline {section}{\numberline {2.3}Le modèle ou l'architecture Rest}{9}{section.36}%
+\contentsline {subsection}{\numberline {2.3.1}Les principes de l’architecture REST}{10}{subsection.37}%
+\contentsline {section}{\numberline {2.4}L’architecture serverless}{11}{section.44}%
+\contentsline {section}{\numberline {2.5}Le protocole OAuth2 et la délégation d’autorisation}{11}{section.45}%
+\contentsline {subsection}{\numberline {2.5.1}Exemple d’implémentation du protocole Oauth2}{11}{subsection.46}%
+\contentsline {subsection}{\numberline {2.5.2}Le vocabulaire du protocole Oauth2}{12}{subsection.47}%
+\contentsline {section}{\numberline {2.6}Intégration de données}{15}{section.52}%
+\contentsline {subsection}{\numberline {2.6.1}Les avantages}{15}{subsection.53}%
+\contentsline {subsection}{\numberline {2.6.2}Opérations ETL et intégration des données}{15}{subsection.54}%
+\contentsline {section}{\numberline {2.7}Conteneurisation}{16}{section.56}%
+\contentsline {subsection}{\numberline {2.7.1}Avantages}{16}{subsection.58}%
+\contentsline {subsection}{\numberline {2.7.2}Exemple des systèmes de conteneurisation}{16}{subsection.59}%
+\contentsline {chapter}{\numberline {3}Outils et technologies utilisés}{17}{chapter.60}%
+\contentsline {section}{\numberline {3.1}Amazon Lambda}{17}{section.61}%
+\contentsline {subsection}{\numberline {3.1.1}Fonctionnement}{17}{subsection.62}%
+\contentsline {subsection}{\numberline {3.1.2}Avantages}{17}{subsection.63}%
+\contentsline {section}{\numberline {3.2}Docker}{18}{section.64}%
+\contentsline {subsection}{\numberline {3.2.1}Docker Hub}{18}{subsection.66}%
+\contentsline {section}{\numberline {3.3}Amplify}{19}{section.67}%
+\contentsline {section}{\numberline {3.4}Amazon Simple Storage Service (Amazon S3)}{19}{section.69}%
+\contentsline {subsection}{\numberline {3.4.1}Avantages de l'utilisation d'Amazon S3}{19}{subsection.70}%
+\contentsline {section}{\numberline {3.5}Aws Aurora}{20}{section.71}%
+\contentsline {subsection}{\numberline {3.5.1}Que signifie « des performances trois fois supérieures à celles de PostgreSQL et MySQL» }{20}{subsection.72}%
+\contentsline {section}{\numberline {3.6}Amazon Cognito}{20}{section.73}%
+\contentsline {section}{\numberline {3.7}API Gateway}{20}{section.74}%
+\contentsline {section}{\numberline {3.8}Amazon Dynamodb}{21}{section.76}%
+\contentsline {section}{\numberline {3.9}CloudWatch}{22}{section.77}%
+\contentsline {section}{\numberline {3.10}Reflex}{23}{section.79}%
+\contentsline {subsection}{\numberline {3.10.1}Scénario d'intégration CEP}{23}{subsection.80}%
+\contentsline {chapter}{\numberline {4}Approche suivie et solution proposée}{25}{chapter.82}%
+\contentsline {section}{\numberline {4.1}Méthodologie de travail: Scrum avec Agile}{25}{section.83}%
+\contentsline {subsection}{\numberline {4.1.1}Les principaux rôles de la méthodologie Scrum}{26}{subsection.84}%
+\contentsline {section}{\numberline {4.2}Les différentes missions et solutions}{27}{section.85}%
+\contentsline {subsection}{\numberline {4.2.1}Mission 1:Etude de faisabilité sur le déploiement d’une application Front-End dans un environnement AWS}{27}{subsection.86}%
+\contentsline {subsubsection}{Observations}{27}{section*.87}%
+\contentsline {subsubsection}{Solutions}{27}{section*.88}%
+\contentsline {subparagraph}{Solution1: L’utilisation de S3 comme repos de d'hébergement}{27}{section*.89}%
+\contentsline {subparagraph}{Solution2: L’utilisation d’Amplify comme comme repos d'hébergement}{28}{section*.91}%
+\contentsline {subsection}{\numberline {4.2.2}Mission 2:Le déploiement et l’intégration du service web (Reflex) dans le parcours de souscription}{28}{subsection.93}%
+\contentsline {subsubsection}{Solutions}{29}{section*.94}%
+\contentsline {subsubsection}{Pipeline de déploiement}{29}{section*.95}%
+\contentsline {subsubsection}{Diagramme de séquence intégration}{30}{section*.98}%
+\contentsline {subsection}{\numberline {4.2.3}Mission 3: Etude de la sécurité actuelle d’accès aux API}{31}{subsection.101}%
+\contentsline {subsubsection}{Rappel des principes de sécurité}{31}{section*.102}%
+\contentsline {subsubsection}{La sécurité des API dans AWS}{31}{section*.103}%
+\contentsline {subsubsection}{Les contrôles d'accès}{31}{section*.106}%
+\contentsline {subsubsection}{Authentification et autorisations}{32}{section*.108}%
+\contentsline {subsubsection}{L'existent}{32}{section*.109}%
+\contentsline {subsubsection}{Observations}{32}{section*.110}%
+\contentsline {subsection}{\numberline {4.2.4}Mission 4(Mise en place d'un ETL d'intégration de données)}{34}{subsection.116}%
+\contentsline {subsubsection}{Observations}{34}{section*.117}%
+\contentsline {subsubsection}{Solution}{34}{section*.122}%

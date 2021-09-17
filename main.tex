@@ -37,7 +37,7 @@ headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
-
+\usepackage{float}
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 %\DeclareUnicodeCharacter{0301}{*************************************}
@@ -80,10 +80,10 @@ headsepline, % Uncomment to get a line under the header
 
 \subject{Biological Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
-\university{\href{http://www.university.com}{Université Paris Saclay}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
-\department{\href{http://department.university.com}{dieu-merci.kimpolo-nkokolo@ens.uvsq.fr}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{\href{http://researchgroup.university.com}{Dieu Merci KIMPOLO NKOKOLO}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
-\faculty{\href{http://faculty.university.com}{Faculty Name}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\university{\href{https://www.uvsq.fr}{Université Paris Saclay}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{https://www.uvsq.fr}{dieu-merci.kimpolo-nkokolo@ens.uvsq.fr}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{https://www.uvsq.fr}{Dieu Merci KIMPOLO NKOKOLO}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{https://www.uvsq.fr}{Faculty Name}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -110,7 +110,7 @@ headsepline, % Uncomment to get a line under the header
   \begin{center}
   \setlength{\tabcolsep}{0pt}
   \begin{tabular}{>{\raggedleft}m{2.5cm}>{\centering}m{\dimexpr\textwidth - 5cm\relax}>{\raggedright}m{2.5cm}}
-  \includegraphics[width=\linewidth]{Figures/assurly}%
+  \includegraphics[width=\linewidth]{Figures/giga}%
   &%
   %\textbf{\large INSTITUTO POLITECNICO NACIONAL} \\[5pt]%
   %\textbf{\large ESCUELA SUPERIOR DE COMPUTO}%
@@ -158,48 +158,53 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE
 %----------------------------------------------------------------------------------------
+\chapter *{Remerciements}
+Premièrement je remercie tout d’abord le Dieu tout Puissant pour le souffle de vie qu’il nous procure au quotidien et sa grâce .\\\\Je remercie également toute l'équipe  technique de Gigamesh, en particulier mon encadreur professionnel Mickaël BENHASSEN, pour sa disponibilité et son aide permanente.\\ \\
+Je tiens à remercier aussi, toute l’équipe pédagogique de l’Université Paris Saclay qui a assuré avec dévouement ma formation de Master DataScale et particulièrement Monsieur TAHER Yehia mon encadrant durant ce stage.\\ \\Enfin je voudrais aussi remercier très sincèrement ma famille pour avoir été toujours à mes côtés durant mes études.
+%Enfin je témoigne toute ma gratitude à toutes les personnes qui n’ont cessé de me soutenir toutau long de ma formation.
+
+
+
+%J’exprime également mes remerciements à tous mes promotionnaires, mes amis et mes proches pour leur attention, soutien et accompagnement.
+%Enfin je voudrais aussi remercier très sincèrement ma famille pour avoir été toujours à mes côtés durant mes études. Je le fais particulièrement à mon Papa AZOTSIE Ferdinand, ma Maman AZOTSIE Christine, tous mes oncles, mes frères et mes sœurs de la famille Magui, ma réussite et mon succès n’ont tenu qu’à votre soutien, vos conseils et vos prières.
 \chapter*{Introduction}
 %\begin{justify}
 L’assurance de prêt généralement désignée par assurance emprunteur, est une garantie demandée par les prêteurs (les banques) lors d’une demande de prêt. 
-Bien que ce ne soit pas une obligation légale, elle est exigée dans la quasi-totalité des cas. Cette assurance permet de couvrir les risques de défaut 
-de paiement quelles que soient leurs causes, ce qui explique qu’elle soit ainsi exigée. Elle comporte des garanties couvrant les risques :
-D’incapacité, D’invalidité,Voire de perte d’emploi.
-
-En France, en  2017,  le  chiffre  d’affaire  de  l’assurance  emprunteur  (crédit  à  la consommation, prêt immobilier et prêt professionnel) était de 9 milliards d’euros dont 6  milliards  d’euros  provenant  uniquement  de  l’assurance  emprunteur  des  prêts immobiliers(1). Ces chiffres, sont toujours  en augmentation.
-
-Près de 50\% du marché de l'assurance emprunteur est contrôlé par deux acteurs: CNP Assurances et   Crédit   Agricole.
-Le domaine manque de l'innovation en terme technologique, d'amelioration des prix et de simplicité de procedure de souscription.
-
+Bien que ce ne soit pas une obligation légale en France, elle est exigée dans la quasi-totalité des cas. Cette assurance permet de couvrir les risques de défaut 
+de paiement quelles que soient leurs causes, ce qui explique qu’elle soit ainsi exigée.\\ \\
+En France, en  2017,  le  chiffre  d’affaire  de  l’assurance  emprunteur  (crédit  à  la consommation, prêt immobilier et prêt professionnel) était de 9 milliards d’euros dont 6  milliards  d’euros  provenant  uniquement  de  l’assurance  emprunteur  des  prêts immobiliers. Ces chiffres, sont toujours  en augmentation. Et près de 50\% du marché de l'assurance emprunteur est contrôlé par deux acteurs: CNP Assurances et   Crédit   Agricole.\\ 
+Un petit nombre d'entreprises a le monopole du marché de l'assurance emprunteur en France, ce qui fait que le secteur manque d'innovation en terme d'amelioration des prix, de transparence et de simplicité des procedures de souscription. Aussi les assurances emprunteur traditionnelles ont construit leur analyse des risques sur une photographie figée de l’assuré, en décalage avec les nombreux changements que la vie réserve. Ils ont donc perdu de vue leur mission de départ : protéger en cas de problème. %Le secteur manque de l'innovation.%Tout est parti du constat que les assurances emprunteur traditionnelles ont construit leur analyse des risques sur une photographie figée de l’assuré, en décalage avec les nombreux changements que la vie réserve. Ils ont donc perdu de vue leur mission de départ : protéger en cas de problème.
+%Le secteur de l'assurance emprunteur peine à s'aligner par rapport aux atouts technologiques de notre époque.\\ \\
+%Le domaine de l'assurance manque de l'innovation en terme technologique, d'amelioration des prix et de simplicité de procedure de souscription Gigamesh compte donner du pouvoir au client.\\ \\
+GigaMesh avec son produit d'assurance emprunteur Assurly compte  révolutionner le domaine de l'assurance emprunteur en associant à son expertise assurantielle  la transparence et les atouts technologiques de notre époque. \\ 
 Pour GigaMesh l'assurance doit s'adapter aux moments de la vie des clients, tout au long de leur vie. En toute transparence, en cherchant 
-à constamment simplifier la vie du client. La technologie de pointe: Edge-computing, Machine learning, Cloud, Serveless, apis Data science
-doivent servir le client. 
-
-GigaMesh veut révolutionner le domaine de l'assurance emprunteur en associant la simplicité aux atouts 
-téchologiques de notre époque. 
-
-C'est pour participer à cette revolution que GigaMesh m'avait offert un stage de six dans son service IT.  
+à constamment simplifier la vie du client. Les technologies de pointe: Edge-computing, Machine learning, Cloud, Serveless, apis Data science
+doivent servir le client. \\ \\
+C'est pour participer à cette revolution et pour me  permettre de compléter mon Master 2 Datascale qui exige un stage de 6 mois en entreprise que GigaMesh m'avait offert un stage de six mois dans son service IT comme développeur Backend.\\ L’essentiel de ce document sera constitué du développement dans l’ordre cité des points suivants: la
+présentation de l’entreprise d’accueil, un état de l'art par rapport aux missions qui m'avaient été confiées, la présentation des technologies utilisées, et la présentation de la méthodologie de travail et des solutions proposées  par rapport à mes missions .
+ 
 %\end{justify}
-\begin{declaration}
-\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
-\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+%\begin{declaration}
+%\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+%\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
 
-\begin{itemize} 
-\item This work was done wholly or mainly while in candidature for a research degree at this University.
-\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item Where I have consulted the published work of others, this is always clearly attributed.
-\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item I have acknowledged all main sources of help.
-\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-\end{itemize}
+%\begin{itemize} 
+%\item This work was done wholly or mainly while in candidature for a research degree at this University.
+%\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+%\item Where I have consulted the published work of others, this is always clearly attributed.
+%\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+%\item I have acknowledged all main sources of help.
+%\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+%\end{itemize}
  
-\noindent Signed:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+%\noindent Signed:\\
+%\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
  
-\noindent Date:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
-\end{declaration}
+%\noindent Date:\\
+%\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+%\end{declaration}
 
-\cleardoublepage
+%\cleardoublepage
 
 %----------------------------------------------------------------------------------------
 %	QUOTATION PAGE
@@ -207,29 +212,46 @@ C'est pour participer à cette revolution que GigaMesh m'avait offert un stage d
 
 \vspace*{0.2\textheight}
 
-\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
+%\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
 
-\hfill Dave Barry
+%\hfill Dave Barry
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
+\chapter*{Résumé}
+%\begin{abstract}
+GigaMesh est une entreprise oeuvrant dans le domaine de l'assurance emprunteur. GigMesh ambitionne de révolutionner le domaine 
+de l'assurance en proposant un produit d'assurance simple accessible, à juste prix et aligné aux technologies de notre époque. \\ \\
+J'ai passé mon stage chez Gigamesh comme développeur Backend.  Mon travail portait principalement sur des questions liées: au déploiement et l'intégration de microservices, à l'intégration des données, à la sécurisation de l'API et au  déploiement des applications web dans l'environnement AWS. \\ \\
+ J'avais ainsi  amélioré et acquis les compétences techniques liées: au  développement et à la sécurisation
+des API dans l'environnement AWS, à intégration de données dans Mysql avec Aurora, à la construction et au déploiement des conteneur Docker
+et aussi à l’utilisation des machines virtuelles dans le Cloud.\\ \\
+Mon stage chez  Gigamesh m'avait également permis de découvrir le domaine d'assurance, d’acquérir des compétences en gestion de projet avec la méthodologie de travail Scrum et dans l’utilisation de certains outils tel que GitHub et Reflex.
 
-\begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
-\end{abstract}
+%Mon stage chez GigaMesh était non seulement un moment d’apprentissage mais également d’application.
 
+%\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+%The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+%\end{abstract}
+
+%J’ai effectué mon stage auprès de la startup Gigamesh ayant pour projet de se lancer dans l’assurance emprunteur. Mon rôle aura été de participer à l’élaboration du produit d’assurance « Assurly by Gigamesh » à travers le développement de l’application mobile essentielle au projet.
+%Afin de répondre aux besoins de l’entreprise, j’ai appris à utiliser le framework Flutter permettant de réaliser des applications mobiles. Mes missions sont passées de la réalisation de la partie front jusqu’aux échanges de données avec le back, en passant par des phases de recherches et d’échanges en vue d’améliorer le produit.
+%Travailler avec Gigamesh m’aura également permis d’acquérir certaines compétences, notamment en gestion de projet avec la méthodologie de travail Scrum et dans l’utilisation de certains outils tel que GitHub. Voir l’évolution du projet Assurly restera pour moi une expérience exceptionnelle et riche en apprentissage.
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\begin{acknowledgements}
-Remerciements
+%\begin{acknowledgements}
+%Remerciements
 %\addchaptertocentry{Remerciements:} % Add the acknowledgements to the table of contents
 %The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
-\end{acknowledgements}
-
+%\end{acknowledgements}
+%\chapter*{Remerciements}
+%Ce stage aura été pour moi une expérience exceptionnelle et ce grâce à l’ensemble de l’équipe Assurly que je remercie.
+%Je souhaite bien évidemment à Assurly de réussir dans son lancement et de réaliser cette vision de l’assurance emprunteur de demain.
+%Je tiens à remercier toute l’équipe tech qui su mettre en place un environnement de travail efficace et agréable notamment grâce à Harry Belinga, mon tuteur. Je remercie tout particulièrement Mickaël Benhassen et Pierre Gancel qui m’auront énormément appris en développement mobile.
+%Enfin, je remercie l’UTT qui m’a permis de réaliser ce stage qui complète parfaitement les enseignements que j’ai suivi jusqu’à maintenant.
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
 %----------------------------------------------------------------------------------------
@@ -238,17 +260,23 @@ Remerciements
 
 \listoffigures % Prints the list of figures
 
-\listoftables % Prints the list of tables
+%\listoftables % Prints the list of tables
 
 %----------------------------------------------------------------------------------------
 %	ABBREVIATIONS
 %----------------------------------------------------------------------------------------
+\chapter*{Abreviations}
 
-\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+%\textbf{Liste des abréviations:} 
+ \begin{figure}[H]
+            \centering
+                \includegraphics[width=0.8\textwidth]{Figures/abrevia}
+	       \decoRule
+		%\caption[Abreviations]{Abreviations}
+	\label{fig:Abreviations}
+\end{figure}
 
-\textbf{Liste des abréviations:} 
-
-\end{abbreviations}
+%\end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %	PHYSICAL CONSTANTS/OTHER DEFINITIONS
@@ -283,7 +311,7 @@ Remerciements
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{For/Dedicated to/To my\ldots} 
+%\dedicatory{For/Dedicated to/To my\ldots} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
@@ -301,17 +329,28 @@ Remerciements
 \include{Chapters/Chapter3}
 \include{Chapters/Chapter4} 
 %\include{Chapters/Chapter5} 
+\chapter*{Conclusion}
+%\begin{abstract}
+Le stage que j'ai passé chez GigaMesh était très bénéfique pour moi. C'était non seulement un moment d'apprentissage mais aussi d'application. 
+Grâce à ce stage j'ai pu découvrir le domaine de l'assurance emprunteur, de travailler avec la méthodologie agile et scrum, de renforcer et d'acquérir des nouvelles compétences dans le domaine de Cloud.\\ \\Ce stage était aussi un moment de confronter mes compétences acquises à l'école à la réalité des entreprise.\\ \\J'ai également par ce stage eu la chance de déployer et d'intégrer le service web Reflex, d'implémenter les protocoles de sécurité sur l'API Gateway, de déployer des applications web dans le cloud d'Amazon et d'intégrer des données sur Mysql dans le service Aurora d'Amazon. 
 
+%GigMesh ambitionne de révolutionner le domaine 
+%de l'assurance en proposant un produit d'assurance simple accessible, à juste prix et aligné aux technologies de notre époque. \\ \\
+%J'ai passé mon stage chez Gigamesh comme développeur Backend.  Mon travail portait principalement sur des questions liées: au déploiement et l'intégration de microservices, à l'intégration des données, à la sécurisation de l'API et au  déploiement des applications web dans l'environnement AWS. \\ \\
+ %J'avais ainsi  amélioré et acquis les compétences techniques liées: au  développement et à la sécurisation
+%des API dans l'environnement AWS, à intégration de données dans Mysql avec Aurora, à la construction et au déploiement des conteneur Docker
+%et aussi à l’utilisation des machines virtuelles dans le Cloud.\\ \\
+%Mon stage chez  Gigamesh m'avait également permis de découvrir le domaine d'assurance, d’acquérir des compétences en gestion de projet avec la méthodologie de travail Scrum et dans l’utilisation de certains outils tel que GitHub et Reflex.
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
 
-\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+%\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+%\include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
@@ -319,7 +358,13 @@ Remerciements
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\printbibliography[heading=bibintoc]
+%\printbibliography
+\chapter*{Bibliographie}
+\begin{enumerate}
+\item  Rapport de stage de GUYOT Antoine
+\item  La web doc d'AWS
+\end{enumerate}
+
 
 %----------------------------------------------------------------------------------------
 

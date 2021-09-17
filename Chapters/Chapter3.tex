@@ -57,7 +57,7 @@ Pour créer ces images, Docker utilise un fichier spécial appelé Dockerfile, q
 L’image est ensuite construite par le démon Docker via l’utilisation de commandes dans le terminal qui sont regroupées dans ce qu’on appelle un CLI.
 Pour gérer l’ensemble des conteneurs d’une application, on utilise Docker Compose.
 
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/dockerfileimagecontainer}
 	       \decoRule
@@ -96,7 +96,7 @@ AWS Amplify est un ensemble d’outils et de services qui peuvent être utilisé
 %Amplify prend en charge les frameworks Web populaires, tels que JavaScript, React, Angular, Vue, Next.js,
 %et les plateformes mobiles, telles qu’Android, iOS, React Native, Ionic, Flutter.
 %\subsubsection{Developpement}
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/amplify_dif}
 	       \decoRule
@@ -104,7 +104,7 @@ AWS Amplify est un ensemble d’outils et de services qui peuvent être utilisé
 	\label{fig:amplify}
 	\end{figure}
 %\subsubsection{}
-% \begin{figure}[!th]
+% \begin{figure}[H]
 %            \centering
 %              \includegraphics[width=0.8\textwidth]{Figures/amplify-2}
 %	       \decoRule
@@ -148,38 +148,24 @@ utilisée. Aucun coût initial ou engagement à long terme n’est requis.
 Amazon Aurora fournit des augmentations significatives des performances de PostgreSQL et  MySQL en intégrant étroitement au moteur de base de données une couche de stockage virtualisée basée sur SSD, conçue principalement pour les charges de travail des bases de données, ce qui permet de réduire les opérations d'écritures dans le système de stockage, minimiser la contention de verrouillage et éliminer les retards créés par les threads de processus de la base de données
 
 \section{Amazon Cognito}
-Amazon Cognito permet d’ajouter facilement et rapidement l’inscription et la connexion des utilisateurs
-ainsi que le contrôle d’accès aux applications Web et mobiles. Amazon Cognito s’adapte à des millions
-d’utilisateurs et prend en charge la connexion avec les fournisseurs d’identité sociale tels qu’Apple, Facebook, Google et Amazon, et les fournisseurs d’identité d’entreprise via SAML 2.0 et OpenID Connect
+Amazon Cognito permet d’ajouter facilement et rapidement l’inscription et la connexion des utilisateurs ainsi que le contrôle d’accès aux applications Web et mobiles. Amazon Cognito s’adapte à des millions d’utilisateurs et prend en charge la connexion avec les fournisseurs d’identité sociale tels qu’Apple, Facebook, Google et Amazon.\\ Amazon Cognito prend en charge les normes de gestion des identités et des accès, telle que Oauth 2.0.
+%, et les fournisseurs d’identité d’entreprise via SAML 2.0 et OpenID Connect
 
-\subsection{Fonctionnalités}
-\subsubsection{Répertoire d’utilisateurs sécuritaire et se mettant à l’échelle}
-Les groupes d’utilisateurs d’Amazon Cognito fournissent un répertoire d’utilisateurs sécurisé qui s’étend à
-des centaines de millions d’utilisateurs. En tant que service entièrement géré, les groupes d’utilisateurs sont
-faciles à configurer sans avoir à s’inquiéter de la mise en place d’une infrastructure serveur.
-\subsubsection{Fédération d’identité sociale et d’entreprise}
-Avec Amazon Cognito, vos utilisateurs peuvent se connecter via des fournisseurs d’identité sociale tels
-que Apple, Google, Facebook et Amazon.
+%\subsection{Fonctionnalités}
+%\subsubsection{Répertoire d’utilisateurs sécuritaire et se mettant à l’échelle}Les groupes d’utilisateurs d’Amazon Cognito fournissent un répertoire d’utilisateurs sécurisé qui s’étend à
+%des centaines de millions d’utilisateurs. En tant que service entièrement géré, les groupes d’utilisateurs sontfaciles à configurer sans avoir à s’inquiéter de la mise en place d’une infrastructure serveur.
+%\subsubsection{Fédération d’identité sociale et d’entreprise}
+%Avec Amazon Cognito, vos utilisateurs peuvent se connecter via des fournisseurs d’identité sociale tels
+%que Apple, Google, Facebook et Amazon.
 
-\subsubsection{Authentification basée sur les standards}
-Amazon Cognito User Pools est un fournisseur d’identités normalisé et prend en charge les normes de
-gestion des identités et des accès, telle que Oauth 2.0.
-\subsubsection{Sécurité pour vos applications et vos utilisateurs}
-Amazon Cognito prend en charge l’authentification multi-facteurs et le chiffrement des données au repos et
-en transit. Amazon Cognito est éligible HIPAA et conforme aux normes PCI DSS, SOC, ISO/IEC 27001,
-ISO/IEC 27017, ISO/IEC 27018, et ISO 9001.
-\subsubsection{Contrôle d’accès pour les ressources AWS}
-Amazon Cognito fournit des solutions pour contrôler l’accès aux ressources AWS à partir de votre application. Vous pouvez définir des rôles et associer des utilisateurs à des rôles différents afin que votre
-application puisse accéder uniquement aux ressources autorisées pour chaque utilisateur. Autre possibilité
-: vous pouvez également utiliser les attributs des fournisseurs d’identité dans les stratégies d’autorisation
-AWS Identity and Access Management. Cela vous permettra de contrôler l’accès à des ressources pour les
-utilisateurs qui remplissent des conditions d’attributs spécifiques
-\subsubsection{Intégration facile avec votre application}
-Amazon Cognito fournit des solutions pour contrôler l’accès aux ressources AWS à partir de votre application. Vous pouvez définir des rôles et associer des utilisateurs à des rôles différents afin que votre
-application puisse accéder uniquement aux ressources autorisées pour chaque utilisateur. Autre possibilité
-: vous pouvez également utiliser les attributs des fournisseurs d’identité dans les stratégies d’autorisation
-AWS Identity and Access Management. Cela vous permettra de contrôler l’accès à des ressources pour les
-utilisateurs qui remplissent des conditions d’attributs spécifiques.
+%\subsubsection{Authentification basée sur les standards}
+%Amazon Cognito User Pools est un fournisseur d’identités normalisé et prend en charge les normes degestion des identités et des accès, telle que Oauth 2.0.
+%\subsubsection{Sécurité pour vos applications et vos utilisateurs}
+%Amazon Cognito prend en charge l’authentification multi-facteurs et le chiffrement des données au repos et
+%en transit. Amazon Cognito est éligible HIPAA et conforme aux normes PCI DSS, SOC, ISO/IEC 27001,ISO/IEC 27017, ISO/IEC 27018, et ISO 9001.
+%\subsubsection{Contrôle d’accès pour les ressources AWS}Amazon Cognito fournit des solutions pour contrôler l’accès aux ressources AWS à partir de votre application. Vous pouvez définir des rôles et associer des utilisateurs à des rôles différents afin que votre
+%application puisse accéder uniquement aux ressources autorisées pour chaque utilisateur. Autre possibilité: vous pouvez également utiliser les attributs des fournisseurs d’identité dans les stratégies d’autorisationAWS Identity and Access Management. Cela vous permettra de contrôler l’accès à des ressources pour lesutilisateurs qui remplissent des conditions d’attributs spécifiques
+%\subsubsection{Intégration facile avec votre application}Amazon Cognito fournit des solutions pour contrôler l’accès aux ressources AWS à partir de votre application. Vous pouvez définir des rôles et associer des utilisateurs à des rôles différents afin que votreapplication puisse accéder uniquement aux ressources autorisées pour chaque utilisateur. Autre possibilité: vous pouvez également utiliser les attributs des fournisseurs d’identité dans les stratégies d’autorisationAWS Identity and Access Management. Cela vous permettra de contrôler l’accès à des ressources pour lesutilisateurs qui remplissent des conditions d’attributs spécifiques.
 
 
 \section{API Gateway}
@@ -197,7 +183,7 @@ minimum ou coûts initiaux ne s’appliquent à API Gateway. Vous payez pour les
 recevez et la quantité de données transférées et, avec le modèle de tarification par paliers de l’API Gateway,
 vous pouvez réduire vos coûts en fonction de l’utilisation de votre API
 
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/apigateway}
 	       \decoRule
@@ -219,19 +205,19 @@ Redfin, ainsi que Samsung, Toyota et Capital One s’appuient sur la mise à l�
 DynamoDB pour prendre en charge leurs charges de travail stratégiques.
 Des centaines de milliers de clients AWS ont choisi DynamoDB comme base de données de clés-valeurs et
 de documents pour leurs applications mobiles, Web, de jeux, de technologie publicitaire, IoT, etc. nécessitant un accès à faible latence aux données, quelle que soit l’échelle
-
+\newpage
 \section{CloudWatch}
 Amazon CloudWatch est un service de surveillance et d'observabilité conçu pour les ingénieurs DevOps, les développeurs, les ingénieurs en fiabilité de sites (SRE) et les responsables informatiques. \\
 
 CloudWatch collecte des données de surveillance et opérationnelles sous forme de journaux, de métriques et d'événements. Ensuite, il les visualise à l'aide de tableaux de bord automatisés pour vous permettre d’avoir une appréciation unifiée de vos ressources, applications et services AWS opérationnels sur AWS et sur site.
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/cloudwatch}
 	       \decoRule
 		\caption[CloudWatch]{CloudWatch}
 	\label{fig:CloudWatch}
 	\end{figure}
-\textbf{A compléter}
+\newpage
 \section{Reflex}
 ReFlex est un système de souscription automatisé modulaire. Il ne s'agit pas d'une application(service web) autonome, elle doit  être intégrée au paysage applicatif du client. Les composants ReFlex requis sont hébergés dans l'environnement du client. Chaque instance de Reflex est fournie avec une base de connaissance paramètrée en fonction des produits d'assurance du client(entreprise d'assurance).
 Les principaux modules de Reflex sont:
@@ -243,7 +229,7 @@ Les principaux modules de Reflex sont:
 \end{list}
 \subsection{Scénario d'intégration CEP}
 En incluant CEP dans le système, toutes les demandes adressées au composant RAS sont filtrées par le backend CEP. Et avant que l'évaluation des risques puisse être lancée, il doit y avoir une toute première étape d'initialisation pour initialiser l'utilisation du CEP. Cette étape comprend l'appel au service d'intégration, qui fait partie du backend CEP, pour créer un jeton Web JSON (JWT) qui sera transmis entre l'interface utilisateur et le backend pour identifier et autoriser l'utilisateur actuel.
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/cepreflex}
 	       \decoRule

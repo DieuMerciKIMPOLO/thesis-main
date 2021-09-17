@@ -4,13 +4,30 @@
 
 \label{Chaptre3} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-Dans cette partie nous présenterons le positionnement du travail demandé par rapport à l’état de l’art scientifique ou technique.
+Dans cette partie je vais  présenter le positionnement des mes missions par rapport à l’état de l’art scientifique ou technique.
+\section{Le cloud computing}
+Le cloud computing ou informatique en nuage est une infrastructure dans laquelle la puissance de calcul et le stockage sont gérés par des serveurs distants auxquels les usagers se connectent via une liaison Internet sécurisée.\\ \\ L'ordinateur de bureau ou portable, le téléphone mobile, la tablette tactile et autres objets connectés deviennent des points d'accès pour exécuter des applications ou consulter des données qui sont hébergées sur les serveurs. \\ \\ Le cloud se caractérise également par sa souplesse qui permet aux fournisseurs d'adapter automatiquement la capacité de stockage et la puissance de calcul aux besoins des utilisateurs.\\ \\
+Comme illustration, le cloud computing se matérialise notamment par les services de stockage et de partage de données numériques type Box, Dropbox, Microsoft OneDrive ou Apple iCloud sur lesquels les utilisateurs peuvent stocker des contenus personnels (photos, vidéos, musique, documents...) et y accéder n'importe où dans le monde depuis n'importe quel terminal connecté.
+ \begin{figure}[H]
+            \centering
+                \includegraphics[width=0.5\textwidth]{Figures/cloud}
+	       \decoRule
+		\caption[Le Cloud]{Le Cloud}
+	\label{fig:Cloud}
+	\end{figure}
+\subsection{Les services du cloud computing} On distingue plusieurs types de services cloud \\
+\subsubsection{IaaS (Infrastructure as a Service, en anglais) }
+C'est un modèle du cloud computing où l'entreprise dispose sur abonnement payant d'une infrastructure informatique (serveurs, stockage, sauvegarde, réseau) qui se trouve physiquement chez le fournisseur qui est aussi responsable pour la sécurité de l'infrastructure.\\ \\Cela peut représenter pour certaines directions des systèmes d’information (DSI) un moyen de réaliser des économies, principalement en transformant des investissements en contrats de location.
 
+\subsubsection{PaaS (Platform as a Service, en anglais)}
+C'est un  modèle du cloud computing qui permet de mettre à disposition des entités clientes un environnement d'exécution rapidement disponible, en leur laissant la maîtrise des applications qu'elles peuvent installer, configurer et utiliser elles-mêmes.\\ \\ Il se distingue ainsi du modèle SaaS où la même application est mise à disposition des nombreux utilisateurs finaux
+\subsubsection{SaaS (Software as a Service, en anglais)}
+C'est un modèle du cloud computing qui fournit des applications  sous forme de services clés en mains auxquels les utilisateurs se connectent via des logiciels dédiés ou un navigateur Internet. \\ \\Exemple Les service de messageries électroniques type Gmail, Yahoo, Outlook.com ou de suites bureautiques type Office 365 ou Google Apps.
+\newpage
 \section{Les APIs(Application programming interface)}
-
 une API est une façade clairement délimitée par laquelle une application offre des services à d’autres applications. Cette façade peut comporter des classes, des méthodes ou des fonctions, des types de données et
 des constantes. Les API peuvent être publiques, partenaires ou privées
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/api}
 	       \decoRule
@@ -129,7 +146,7 @@ besoin d’intervenir directement sur chaque application.
 
 Le protocole Oauth2 est utilisé par plusieurs entreprises comme Facebook, Google et Twitter. L’exemple que nous proposons ici est celui qui permet
 d’afficher instantanément les tweets sur Facebook sans avoir besoin de votre mot de passe Facebook
-
+\newpage
 \subsection{Le vocabulaire du protocole Oauth2}
 \textbf{Les rôles}: Le protocole Oauth2 identifie quatre rôles: Client, Propriétaire de ressources, Serveur d’autorisation
 et Serveur de ressources.
@@ -143,7 +160,7 @@ et Serveur de ressources.
 	les ressources protégées ou à accès limité. Un exemple du serveur des ressources peut être Facebook et Google qui hébergent les informations des profils des utilisateurs.
 	\item Le client (Client Application): \\
 	C’est une application qui sollicite les ressources du serveur de
-	ressources, celle-ci peut être une application PHP, une application mobile, une application Javascrip.
+	ressources, celle-ci peut être une application PHP, une application mobile, une application Javascript.
 	\item Le serveur d’autorisation (Authorization Server):\\
 	Le serveur d’autorisation représente le serveur
 	qui délivre des jetons au client. Ces jetons seront utilisés lors des requêtes du client vers le serveur de ressources. Ce serveur peut être le même que le serveur de ressources (physiquement et applicativement), et c’est souvent le cas.
@@ -166,18 +183,18 @@ qu’ une autorisation lui est offerte.
 	Elle doit être utilisée quand l’application se trouve côté
 	client(typiquement une application Javascript). Il ne permet pas d’obtenir de token de renouvellement.
 	
-	\begin{figure}[!th]
+	\begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/implicit_grant}
 	       \decoRule
 		\caption[Implicit grant]{Implicit grant}
 	\label{fig:implicit}
 	\end{figure}
-	
+	\newpage
 	\item L’autorisation via un code (Authorization Code Grant): \\
 	Ce type d’autorisation permet d’obtenir deux jetons : le jeton d’accès et le jeton de renouvellement. Le client dans ce cas de figure interagit
 	avec le propriétaire des ressources via un client web généralement un navigateur
-	\begin{figure}[!th]
+	\begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/code_grant}
 	       \decoRule
@@ -187,18 +204,18 @@ qu’ une autorisation lui est offerte.
 	
 	\item L’autorisation serveur à serveur (Client Credentials Grant):\\
 	 Elle doit être utilisée lorsque le client est lui-même le détenteur des données. Il n’y a pas d’autorisation à obtenir de la part de l’utilisateur
-	 \begin{figure}[!th]
+	 \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/server_server}
 	       \decoRule
 		\caption[Sever grant]{Server grant}
 	\label{fig:Server}
 	\end{figure}
-	
+	\newpage
 	 \item L’autorisation via mot de passe (Resource Owner Password Credentials Grant):\\
 	 Avec ce type d’autorisation, les identifiants sont envoyés au client et ensuite au serveur d’autorisation. Il est donc
 	 impératif qu’il y ait une confiance absolue entre ces 2 entités. Ce type d’autorisation est principalement utilisé lorsque le client a été développé par la même autorité que celle          fournissant le serveur d’autorisation final.
-	 \begin{figure}[!th]
+	 \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/password_grant}
 	       \decoRule
@@ -207,7 +224,7 @@ qu’ une autorisation lui est offerte.
 	\end{figure}
 \end{list}
 
-
+\newpage
 %----------------------------------------------------------------------------------------
 \section{Intégration de données}
 L’intégration des données est le processus qui consiste à combiner des données provenant de différentes
@@ -224,13 +241,14 @@ Les opérations d’extraction, de transformation et de chargement (ETL) forment
 à part entière dans lequel les données sont extraites du système source et livrées au data warehouse. Il s’agit
 d’un processus continu que le data warehousing exécute pour transformer plusieurs sources de données en
 informations cohérentes et utiles destinées à la Business Intelligence et aux analyses.
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/etl}
 	       \decoRule
 		\caption[ETL]{ETL}
 	\label{fig:ETL}
 	\end{figure}
+\newpage
 \section{Conteneurisation}
 Un conteneur est un système qui permet de stocker et d’isoler des objets devant être transportés ou déployés dans un environnement d’exploitation étendu (applications, logiciels, librairie, etc.). Il permet également au code applicatif d’être transporté de l’environnement de développement vers celui de production de manière aisée et sûre.  
 La conteneurisation permet:
@@ -245,7 +263,7 @@ La conteneurisation permet:
 La conteneurisation est parfois confondue avec la virtualisation. Quand la première nécessite que chaque machine virtuelle possède 
 son système d’exploitation, les conteneurs eux se connectent au noyau des machines, kernel, pour en exploiter les ressources. 
 Moins lourds, ils sont plus faciles à déplacer et à stocker. 
- \begin{figure}[!th]
+ \begin{figure}[H]
             \centering
                 \includegraphics[width=0.8\textwidth]{Figures/virtualvscont}
 	       \decoRule
